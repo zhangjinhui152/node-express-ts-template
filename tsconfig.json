@@ -24,10 +24,11 @@
   },
   "exclude": [
     "node_modules",
-    "dist"
+
   ],
   "include": [
     "app.ts",
+    "util/*.ts"
   ],
   "ts-node": {
     "esm": true,

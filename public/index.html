@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - html forms</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <div style="width: 22%; min-width: 80%; margin: 0 auto;background-color: #f4f7f8;padding:  1%;" method="post">
+          <h1> Wifi 配置 </h1>
+
+          <fieldset>
+
+            <legend><span class="number">1</span> 基本信息</legend>
+
+            <label for="name">wifi （不支持5G ）名称:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="email">wifi 密码:</label>
+            <input type="text" id="password1" name="user_email">
+
+            <label for="password">wifi 密码再来一次:</label>
+            <input type="password" id="password" name="user_password">
+            <label for="password">宁的wifi 局域网ip :</label>
+            <input type="text" id="localIp" name="user_password">
+
+            <label>你已确认这个wifi密码没有问题 连不上不负责:</label>
+            <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13"
+              class="light">是</label><br>
+            <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13"
+              class="light">否</label>
+
+          </fieldset>
+          <fieldset>
+<!-- 
+            <legend><span class="number">2</span> 可选</legend>
+
+            <label for="bio">想对开发者说的话:</label>
+            <textarea id="bio" name="user_bio"></textarea>
+
+
+
+            <label for="job">你的手机型号:</label>
+            <select id="job" name="user_job">
+              <optgroup label="爱国者">
+                <option value="frontend_developer">华为</option>
+              </optgroup>
+              <optgroup label="Mobile">
+                <option value="android_developer">红米</option>
+                <option value="ios_developer">小米</option>
+              </optgroup>
+              <optgroup label="歪果手机😡">
+                <option value="business_owner">苹果</option>
+                <option value="freelancer">三星</option>
+              </optgroup>
+            </select> -->
+
+            <!-- <label>Interests:</label>
+            <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+              class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
+              for="design">Design</label><br>
+            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light"
+              for="business">Business</label> -->
+
+          </fieldset>
+
+          <button type="submit" id="submit">提交</button>
+          <button type="submit" id="scan">寻找树莓派</button>
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="loop-even"
+            style="height: 150px; width: 150px; background: rgb(255, 255, 255,0);">
+            <g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);">
+              <g class="ldl-ani">
+                <g class="ldl-layer">
+                  <g class="ldl-ani"
+                    style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-43692636-e19a-4e52-8354-698f047f3f16;">
+                    <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="3"
+                      stroke="#333" fill="none"
+                      d="M50.4 44.3c4.3-3.4 7.8-7.6 11.4-11.6 3.7-4 7.6-7.9 12.4-10.4C79.1 19.9 85 19 90 21.1"
+                      style="stroke: rgb(51, 51, 51);"></path>
+                  </g>
+                </g>
+                <g class="ldl-layer">
+                  <g class="ldl-ani"
+                    style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-43692636-e19a-4e52-8354-698f047f3f16;">
+                    <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="3"
+                      stroke="#333" fill="#abbd81"
+                      d="M31.9 42.2c2.6.6 5.3.8 7.8.6-4.4 1.3-9.1 3.6-12.6 7.3-9.9 10.3-8 28.2-8 28.2s18 1.2 27.9-9.2c3.6-3.7 5.6-8.4 6.8-12.9-.1 2.6.2 5.2.9 7.8 4 13.8 20.4 21.1 20.4 21.1s10-15 6-28.7c-4-13.8-20.4-21.1-20.4-21.1l-.3-.3s-8-16.1-21.9-19.6C24.6 12.1 10 22.7 10 22.7s8 16.1 21.9 19.5z"
+                      style="fill: rgb(171, 189, 129); stroke: rgb(51, 51, 51);"></path>
+                  </g>
+                </g>
+                <metadata xmlns:d="https://loading.io/stock/">
+
+                </metadata>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  </html>
+  <!-- partial -->
+
+</body>
+<script>
+  let stopFlag = false
+  const showLoop = () => {
+    document.getElementsByClassName("loop-even")[0].style.display = "block";
+    console.log(' document.getElementsByClassName("loop-even")[0].style :>> ', document.getElementsByClassName("loop-even")[0].style);
+  }
+  const hideLoop = () => {
+    document.getElementsByClassName("loop-even")[0].style.display = "none";
+  }
+
+  const sumbitJoin = async (ipAddr) => {
+    try {
+      const controller = new AbortController();
+      const signal = controller.signal;
+
+      setTimeout(() => {
+        controller.abort();
+      }, 1000);
+      let response = await fetch(`http://${ipAddr}:3000/join`, {
+        signal
+      })
+      let data = await response.text()
+      console.log('data :>> ', data);
+      alert(`宁的树莓派地址为 ${ipAddr}`)
+      return true
+    } catch (error) {
+      console.log('error :>> ', error);
+      return false;
+    }
+  }
+  const scanIp = async () => {
+    /**
+     * @type{string}
+     **/
+    let localIp = document.getElementById('localIp').value
+    /**
+     * @type{Array<string>}
+     **/
+    let localIpArray = localIp.split(".")
+    localIpArray.pop()
+    localIp = localIpArray.join(".")
+    console.log('localIp :>> ', localIp);
+    for (let index = 2; index < 255; index++) {
+
+      sumbitJoin(`${localIp}.${index}`)
+      console.log(`${localIp}.${index}`);
+    }
+
+
+
+  }
+
+
+  document.getElementById("submit").addEventListener("click", function () {
+
+    if (document.getElementById('password').value != document.getElementById('password1').value) {
+      alert("两次密码不一致");
+
+    }
+    showLoop()
+    fetch('/sumbitSMP', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: document.getElementById('name').value,
+        password: document.getElementById('password').value
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        hideLoop()
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        hideLoop()
+        console.error('Error:', error);
+      });
+  });
+  document.getElementById("scan").addEventListener("click", scanIp)
+
+
+
+</script>
+<style>
+  .loop-even {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+</html>
